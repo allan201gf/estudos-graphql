@@ -14,4 +14,8 @@ public class QueryGraphQL implements GraphQLQueryResolver {
         return a+b;
     }
 
+    public Cliente cliente() {
+        return new Cliente("Allan", "allan201gf@gmail.com");
+    }
+
 }
