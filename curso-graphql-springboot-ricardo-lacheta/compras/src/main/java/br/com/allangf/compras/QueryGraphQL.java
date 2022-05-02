@@ -3,6 +3,9 @@ package br.com.allangf.compras;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Component
 public class QueryGraphQL implements GraphQLQueryResolver {
 
@@ -16,6 +19,14 @@ public class QueryGraphQL implements GraphQLQueryResolver {
 
     public Cliente cliente() {
         return new Cliente("Allan", "allan201gf@gmail.com");
+    }
+
+    public List<Cliente> clientes() {
+        List<Cliente> list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            list.add(new Cliente("Cliente " + i, "r" + i + "@gmail.com"));
+        }
+        return list;
     }
 
 }
