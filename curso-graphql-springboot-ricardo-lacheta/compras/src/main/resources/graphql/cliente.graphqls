@@ -11,8 +11,14 @@ extend type Query {
     clientes:[Cliente]
 }
 
+input ClienteInput {
+    id:ID
+    nome:String
+    email:String
+}
+
 extend type Mutation {
-    saveCliente(id:ID, nome:String, email:String):Cliente
+    saveCliente(cliente:ClienteInput):Cliente
 
     deleteCliente(id:ID):Boolean
 }
