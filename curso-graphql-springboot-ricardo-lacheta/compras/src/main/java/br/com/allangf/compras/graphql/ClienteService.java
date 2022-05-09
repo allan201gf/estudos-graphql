@@ -1,7 +1,7 @@
 package br.com.allangf.compras.graphql;
 
-import br.com.allangf.compras.Cliente;
-import br.com.allangf.compras.ClienteRepository;
+import br.com.allangf.compras.domain.Cliente;
+import br.com.allangf.compras.domain.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

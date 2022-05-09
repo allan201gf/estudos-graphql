@@ -1,8 +1,6 @@
 package br.com.allangf.compras.graphql;
 
-import br.com.allangf.compras.Cliente;
-import br.com.allangf.compras.ClienteInput;
-import br.com.allangf.compras.Produto;
+import br.com.allangf.compras.domain.Produto;
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import org.modelmapper.ModelMapper;

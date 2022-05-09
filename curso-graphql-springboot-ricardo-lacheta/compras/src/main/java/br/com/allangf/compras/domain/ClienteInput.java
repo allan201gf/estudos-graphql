@@ -1,4 +1,4 @@
-package br.com.allangf.compras;
+package br.com.allangf.compras.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
